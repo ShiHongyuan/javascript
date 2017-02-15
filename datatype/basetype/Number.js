@@ -2,8 +2,6 @@
 console.log(typeof(NaN)); //number
 console.log(typeof(Number.MIN_VALUE)); //number
 
-
-
 //整数
 ////十进制
 

@@ -92,3 +92,10 @@ console.log(typeof fun);
 //true
 console.log(undefined == null);
 
+
+
+//null和undefined是相等的，所以未初始化变量也等于null
+var t;
+console.log(t == null); //true
+console.log(t == undefined); //true
+
