@@ -34,7 +34,7 @@ console.log( Boolean(null) ); //false
 
 //Object
 console.log( Boolean({"name":"shihongyuan"}) ); //true
-console.log( Boolean({}) ); //true  {}表示空的复杂数据类的对象，是有值的，只是值的属性时空的，与null表示空值不同
+console.log( Boolean({}) ); //true  {}表示空的复杂数据类的对象，是有值的，只是值的属性是空的，与null表示空值不同
 
 
 
