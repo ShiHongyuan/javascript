@@ -22,7 +22,7 @@
 // for (var i = 0; i < count; i++){
 //     ;
 // }
-// console.log(i);         //局部变量在js中也可以在外部访问到
+// console.log(i);         //语句局部变量在js中也可以在外部访问到，函数局部变量不能被外面访问，作用域不一样
 
 // var i;
 // for ( i = 0; i < count; i++){
