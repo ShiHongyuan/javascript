@@ -18,3 +18,7 @@
 	支持这两个归并函数的浏览器有
 	IE9+、Firefox 3+、Safari 4+、Opera 10.5 和Chrome。
 
+> RegEXp的lastIndex属性全局和非全局模式下
+
+	lastIndex属性在全局模式下每次执行exec()后会变化成匹配项的下一个位置，在非全局模式下，每次执行exec()都是从0开始
+	但是IE即使在非全局模式下，lastIndex 属性每次也会变化。
