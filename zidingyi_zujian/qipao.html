@@ -1,0 +1,167 @@
+<html>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .balloon-container {
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    line-height: 27px;
+    background-color: #f5ab04;
+    color: #fff;
+    /* margin: 300px auto; */
+    text-align: center;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.balloon-tips.top {
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #666;
+    left: 50%;
+    top: -210px;
+    transform: translateX(-50%);
+    color: #000;
+    padding: 10px;
+}
+
+.balloon-tips.bottom {
+    display: none;
+    position: absolute;
+    width: 220px;
+    height: 130px;
+    border: 1px solid #666;
+    left: 50%;
+    bottom: -140px;
+    transform: translateX(-50%);
+    color: #333;
+    z-index: 99999;
+    background-color: #fff;
+    font-size: 13px;
+    text-align: left;
+    padding: 10px;
+    line-height: 15px;
+    font-weight: 400;
+}
+
+.balloon-tips.right {
+    display: none;
+    position: absolute;
+    width: 290px;
+    height: 90px;
+    border: 1px solid #666;
+    top: 50%;
+    right: -300px;
+    transform: translateY(-50%);
+    color: #333;
+    z-index: 99999;
+    background-color: #fff;
+    font-size: 13px;
+    text-align: left;
+    padding: 10px;
+    line-height: 10px;
+    font-weight: 400;
+}
+
+.balloon-tips.top:before {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #000;
+}
+
+.balloon-tips.top:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #fff;
+}
+
+.balloon-tips.bottom:before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #000;
+}
+
+.balloon-tips.bottom:after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+}
+
+.balloon-tips.right:before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #000;
+}
+
+.balloon-tips.right:after {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #fff;
+}
+
+.balloon-tips .title {
+    color: #f5ab04;
+}
+
+.balloon-container:hover .balloon-tips {
+    display: block;
+}
+</style>
+<body>
+    <div class="balloon-container">
+        ?
+        <div class="balloon-tips top">
+            <p>提示内容1</p>
+            <p>提示内容2</p>
+        </div>
+    </div>
+</body>
+</html>

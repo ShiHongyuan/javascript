@@ -1,0 +1,167 @@
+<style>
+    .table-head{padding-right:17px;background-color:#999;color:#000;}
+    .table-body{width:100%; height:300px;overflow-y:scroll;}
+    .table-head table,.table-body table{width:100%;}
+    .table-body table tr:nth-child(2n+1){background-color:#f2f2f2;}
+</style>
+<style type="text/css">  
+        /*所有内容都在这个DIV内*/  
+        div.all {  
+            border: 3px solid #FF00FF;  
+            width: 80%;
+            clear: right;  
+        }  
+          
+        /*表头在这个DIV内*/  
+        div.title {  
+            width: 100%;  
+        }  
+        /*内容在这个DIV内*/  
+        div.content {  
+            width: 100%;  
+            overflow: scroll;  /*总是显示滚动条*/  
+            overflow-x: hidden; /*去掉横向滚动条*/  
+            height: 100px;  
+        }  
+        div.title_left {  
+            float: left;  
+            margin-right: 17px;  
+        }  
+        div.content_left {  
+            float: left;  
+        }  
+          
+        .main_table {  
+            width: 100%;  
+            border: 1px solid #FF00FF;  
+            border-collapse: collapse;  /*边线与旁边的合并*/    
+            table-layout:fixed;
+            text-align: center;  
+        }  
+        .main_table tr th {    
+            border: 1px solid #FF00FF;    
+            overflow: hidden;  /*超出长度的内容不显示*/    
+            word-break: break-all;  /*字内断开*/    
+            text-overflow: ellipsis;  /*当对象内文本溢出时显示省略标记（…），省略标记插入的位置是最后一个字符*/    
+            white-space: nowrap;    
+        }    
+        /*单元格样式*/    
+        .main_table tr td {    
+            border: 1px solid #FF00FF;    
+            overflow: hidden;    
+            word-break: break-all;    
+            text-overflow: ellipsis;    
+            white-space: nowrap;    
+        }    
+    </style> 
+    <div class="all">  
+            <div class="title">  
+                <div class="title_left">  
+                <table class="main_table">  
+                    <tr>  
+                        <th>姓名</th>
+                        <th>年龄</th>
+                        <th>性别</th> 
+                    </tr>  
+                </table>  
+                </div>  
+            </div>  
+            <div class="content">  
+                <div class="content_left">  
+                <table class="main_table">  
+                    <tr>  
+                        <td>张三</td>
+                        <td>21</td>
+                        <td>男</td> 
+                    </tr>  
+                    <tr>  
+                        <td>李四</td>
+                        <td>35</td>
+                        <td>男</td>   
+                    </tr>  
+                    <tr>  
+                        <td>李红</td>
+                        <td>18</td>
+                        <td>女</td> 
+                    </tr>  
+                    <tr>  
+                        <td>王五</td>
+                        <td>20</td>
+                        <td>男</td>   
+                    </tr>  
+                    <tr>  
+                        <td>李飞</td>
+                        <td>33</td>
+                        <td>男</td> 
+                    </tr>  
+                    <tr>  
+                        <td>张薇</td>
+                        <td>23</td>
+                        <td>女</td>  
+                    </tr>  
+                    <tr>  
+                        <td>三毛</td>
+                        <td>24</td>
+                        <td>男</td>  
+                    </tr>  
+                    <tr>  
+                        <td>鹏子</td>
+                        <td>13</td>
+                        <td>男</td> 
+                    </tr>  
+                    <tr>  
+                        <td>黄一</td>
+                        <td>26</td>
+                        <td>女</td> 
+                    </tr>  
+                    <tr>  
+                        <td>管理</td>
+                        <td>28</td>
+                        <td>男</td> 
+                    </tr>   
+                </table>  
+                </div>  
+            </div>  
+        </div>
+<div style="width: 800px;">
+    <div class="table-head">
+    <table>
+        <colgroup>
+            <col style="width: 80px;" />
+            <col />
+        </colgroup>
+        <thead>
+            <tr><th>序号</th><th>内容</th></tr>
+        </thead>
+    </table>
+    </div>
+    <div class="table-body">
+    <table>
+        <colgroup><col style="width: 80px;" /><col /></colgroup>
+        <tbody>
+            <tr><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>2</td><td>我只是用来测试的</td></tr>
+            <tr><td>3</td><td>我只是用来测试的</td></tr>
+        </tbody>
+    </table>
+    </div>
+</div>
+
+<table class="desc-table" frame="void">
+    <thead class="desc-th">
+        <tr>
+            <th class="col-md-3">表名</th>
+            <th class="col-md-9">错误详情</th>
+        </tr>
+    </thead>
+    <tbody class="desc-td">
+        <tr>
+            <td class="col-md-3"></td>
+            <td class="col-md-9"></td>
+        </tr>
+    </tbody>
+</table>
+
+通用+转化+限时 在卡券处显示，转化没有title，限时有title，所以在卡券处显示时是没有title的对吗
+
+hhh.logshihongyuanapp.log:ERROR 1064 (42000) at line 26 in file: 'app.sql': You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'com.jeon.blackbox','AutoBoy 姹借溅榛戝專瀛?- Blackbox',7,100),(1098793158886536' at line 1shihongyuanintent.log:ERROR 20 (HY000) at line 136 in file: 'intent.sql': Disk is full writing './mysql-bin.000217' (Errcode: 28). Waiting for someone to free space... (Expect up to 60 secs delay for server to continue after freeing disk spaceshihongyuanunitsetting.log:ERROR 20 (HY000) at line 78 in file: 'unitsetting.sql': Disk is full writing './mysql-bin.000217' (Errcode: 28). Waiting for someone to free space... (Expect up to 60 secs delay for server to continue after freeing disk spaceshihongyuanwtpwordinfo.log:ERROR at line 30 in file: 'wtpwordinfo.sql': Unknown command '''."shihongyuanhhh.logshihongyuanapp.log:ERROR 1064 (42000) at line 26 in file: 'app.sql': You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'com.jeon.blackbox','AutoBoy 姹借溅榛戝專瀛?- Blackbox',7,100),(1098793158886536' at line 1shihongyuanintent.log:ERROR 20 (HY000) at line 136 in file: 'intent.sql': Disk is full writing './mysql-bin.000217' (Errcode: 28). Waiting for someone to free space... (Expect up to 60 secs delay for server to continue after freeing disk space)shihongyuanunitsetting.log:ERROR 20 (HY000) at line 78 in file: 'unitsetting.sql': Disk is full writing './mysql-bin.000217' (Errcode: 28). Waiting for someone to free space... (Expect up to 60 secs delay for server to continue after freeing disk space)shihongyuanwtpwordinfo.log:ERROR at line 30 in file: 'wtpwordinfo.sql': Unknown command '''."shihongyuanhhh.logshihongyuanapp.log:ERROR 1064 (42000) at line 26 in file: 'app.sql': You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'com.jeon.blackbox','AutoBoy 姹借溅榛戝專瀛?- Blackbox',7,100),(1098793158886536' at line 1shihongyuanintent.log:ERROR 20 (HY000) at line 136 in file: 'intent.sql': Disk is full writing './mysql-bin.000217' (Errcode: 28). Waiting for someone to free space... (Expect up to 60 secs delay for server to continue after freeing disk space)shihongyuanunitsetting.log:ERROR 20 (HY000) at line 78 in file: 'unitsetting.sql': Disk is full writing './mysql-bin.000217' (Errcode: 28). Waiting for someone to free space... (Expect up to 60 secs delay for server to continue after freeing disk space)shihongyuanwtpwordinfo.log:ERROR at line 30 in file: 'wtpwordinfo.sql': Unknown command '''."
