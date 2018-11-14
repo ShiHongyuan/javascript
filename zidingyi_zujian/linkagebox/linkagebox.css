@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+}
+
+/**为连动框添加自定义样式*/
+select.module-options {
+    display: inline-block;
+    width: 25%;
+    overflow: hidden;
+}
+
+select.module-options:first-child {
+    margin-right: 12px;
+}

@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+}
+
+/**濡亜鎮滈崝鐘烘祰閺冦儲婀�*/
+.second, .option {
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+
+.second li {
+    float: left;
+    text-align: center;
+    margin-top: 6px;
+    margin-right: 35px;
+    font-size: 14px;
+    color: #333;
+}
+
+.option li {
+    float: right;
+    width: 100px; 
+    color: #555;
+    padding: 2px 0;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -o-border-radius: 1px;
+    margin-right: 20px;
+    margin-top: 6px;
+    font-size: 13px;
+    background-color: #fff;
+}
+
+.option li.reduce:hover{
+    background-color: #ddd;
+}
+
+.option li.add:hover{
+    background-color: #eee;
+}
+
+.add, .reduce {
+    cursor: pointer;
+}
+
+/**缁旀牕鎮滈崝鐘烘祰path缁涳拷**/
+.selectedpathslist .second li{
+    width: 100%; 
+    text-align: left;
+    margin-top: 6px;
+}
+.selecteduserslist .second li{
+    float: left;
+    text-align: left;
+    margin-top: 6px;
+    margin-right: 35px;
+    font-size: 15px;
+}
+
+.selecteddateslist.resultpage .option li, .selectedpathslist.resultpage .option li, .selecteduserslist.resultpage .option li{
+    float: right;
+    width: 100px;
+    padding: 2px 0;
+    text-align: center;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    font-size: 13px;
+}
+
+.selecteddateslist.resultpage .option li.add, .selectedpathslist.resultpage .option li.add, .selecteduserslist.resultpage .option li.add{
+    color: #007cf5;
+    background-color: #e3f3ff;
+    border: 1px solid #007cf5;
+}
+.selecteddateslist.resultpage .option li.reduce, .selectedpathslist.resultpage .option li.reduce, .selecteduserslist.resultpage .option li.reduce{
+    color: #007cf5;
+    background-color: #fff;
+    border: 1px solid #007cf5;
+}
+
+.selecteddateslist.resultpage .option li.add:hover, .selectedpathslist.resultpage .option li.add:hover, .selecteduserslist.resultpage .option li.add:hover{
+    background-color: #d6ebfc;
+}
+.selecteddateslist.resultpage .option li.reduce:hover, .selectedpathslist.resultpage .option li.reduce:hover, .selecteduserslist.resultpage .option li.reduce:hover{
+    background-color: #f5f5f5;
+}
+
+/**缁旀牕鎮滈崝鐘烘祰jobtime缁涳拷*/
+.jobtimeslist{
+    margin: 0;
+}
+.jobtimeslist .second, .option {
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+
+.jobtimeslist .second li {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.jobtimeslist .option li {
+    float: none;
+    width: 70px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    margin: 4px auto;
+    cursor: pointer;
+    height: 25px;
+    line-height: 16px;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -o-border-radius: 1px;
+    position: relative;
+}
+.jobtimeslist .option li.add{
+    background-color: #e3f3ff;
+    color: #007cf5;
+    border: 1px solid #e3f3ff;
+}
+
+/* .jobtimeslist .option li.add:after{
+	content: "▼;
+	float: right;
+    width: 10px;
+    display: inline-block;
+    line-height: 23px;
+    margin-left: 5px;
+} */
+
+.jobtimeslist .option li.add:hover{
+    background-color: #d6ebfc;
+    border-color: #d6ebfc;
+}
+
+.jobtimeslist .option li.reduce{
+    /* color: #555;
+    border: 1px solid #999; */
+    color: #007cf5;
+    border: 1px solid #007cf5;
+}
+
+.jobtimeslist .option li.reduce:hover{
+    /* background-color: #eee; */
+    background-color: #e3f3ff;
+}
+
+/* .jobtimeslist .option li.reduce:after{
+	content: "▲;
+	float: right;
+    width: 10px;
+    display: inline-block;
+    line-height: 23px;
+    margin-left: 5px;
+} */
+
+/**缁旀牕鎮滈崝鐘烘祰jobpath缁涳拷*/
+.jobpathslist{
+    margin: 0;
+}
+.jobpathslist .second, .option {
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+
+.jobpathslist .second li {
+    float: none;
+    width: 100%;
+    text-align: left;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.jobpathslist .option li {
+    float: none;
+    width: 70px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    margin: 4px auto;
+    cursor: pointer;
+    height: 25px;
+    line-height: 16px;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -o-border-radius: 1px;
+    position: relative;
+}
+
+.jobpathslist .option li.add{
+    background-color: #e3f3ff;
+    color: #007cf5;
+    border: 1px solid #e3f3ff;
+}
+
+/* .jobpathslist .option li.add:after{
+	content: "▼";
+	width: 10px;
+	float: right;
+    display: inline-block;
+    line-height: 23px;
+    margin-left: 5px;
+} */
+
+.jobpathslist .option li.add:hover{
+    background-color: #d6ebfc;
+    border-color: #d6ebfc;
+}
+
+.jobpathslist .option li.reduce{
+    /* color: #555;
+    border: 1px solid #999; */
+    color: #007cf5;
+    border: 1px solid #007cf5;
+}
+
+.jobpathslist .option li.reduce:hover{
+    /* background-color: #eee; */
+    background-color: #e3f3ff;
+}
+
+/* .jobpathslist .option li.reduce:after{
+	content: "▲;
+	width:10px;
+	float: right;
+    display: inline-block;
+    line-height: 23px;
+    margin-left: 5px;
+} */
+
+/**缁旀牕鎮滈崝鐘烘祰jobuser缁涳拷*/
+.jobuserslist{
+    margin: 0;
+    font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+}
+.jobuserslist .second, .option {
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+
+.jobuserslist .second li {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.jobuserslist .option li {
+    float: none;
+    width: 70px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    margin: 4px auto;
+    cursor: pointer;
+    height: 25px;
+    line-height: 16px;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -o-border-radius: 1px;
+    position: relative;
+}
+
+.jobuserslist .option li.add{
+    background-color: #e3f3ff;
+    color: #007cf5;
+    border: 1px solid #e3f3ff;
+}
+
+/* .jobuserslist .option li.add:after{
+	content: "▼";
+	width: 10px;
+	float: right;
+    display: inline-block;
+    line-height: 23px;
+    margin-left: 5px;
+} */
+
+.jobuserslist .option li.add:hover{
+    background-color: #d6ebfc;
+    border-color: #d6ebfc;
+}
+
+.jobuserslist .option li.reduce{
+    /* color: #555;
+    border: 1px solid #999; */
+    color: #007cf5;
+    border: 1px solid #007cf5;
+}
+
+.jobuserslist .option li.reduce:hover{
+    /* background-color: #eee; */
+    background-color: #e3f3ff;
+}
+
+/* .jobuserslist .option li.reduce:after{
+	content: "▲";
+	width: 10px;
+	float: right;
+    display: inline-block;
+    line-height: 23px;
+    margin-left: 5px;
+} */
+

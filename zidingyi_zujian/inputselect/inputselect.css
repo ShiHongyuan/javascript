@@ -1,0 +1,168 @@
+/*
+* @Author: shihongyuan
+* @Date:   2017-10-24 17:44:37
+* @Last Modified by:   shihongyuan
+* @Last Modified time: 2017-10-28 15:45:46
+*/
+.inputselect, .inputselect *, .inputselect-list, .inputselect-scroll {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.inputselect {
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    overflow: hidden;
+    text-indent: 2em;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border-color: #ccc;
+    box-sizing: border-box;
+    padding: 6px 30px 6px 20px;
+    cursor: pointer;
+}
+
+.inputselect.tinashy-active {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.inputselect.tinashy-active:before {
+    position: absolute;
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #ccc;
+    border-top: 0;
+    right: 8px;
+    top: 12px;
+}
+
+.inputselect.tinashy-active:after {
+    position: absolute;
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    border-top: 0;
+    right: 8px;
+    top: 13px;
+}
+
+.inputselect:before {
+    position: absolute;
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ccc;
+    right: 8px;
+    top: 13px;
+}
+
+.inputselect:after {
+    position: absolute;
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #fff;
+    right: 8px;
+    top: 12px;
+}
+
+.inputselect input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    /*height: 100%;*/
+    line-height: 30px;
+    overflow: hidden;
+}
+.inputselect input:focus {
+    border: 0;
+    outline: 0;
+}
+
+/* .inputselect-scroll {
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-top: 2px;
+}
+
+.inputselect-scroll .mCustomScrollBox {
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+} */
+
+.inputselect-scroll {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+.inputselect-scroll .mCustomScrollBox {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inputselect-scroll .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: rgba(114, 114, 114, 0.2);
+}
+
+.inputselect-scroll .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: rgba(114, 114, 114, 0.2);
+}
+
+.inputselect-list {
+    width: 100%;
+    position: relative;
+    top: -1px;
+}
+.inputselect-list > li {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+}
+
+.inputselect-list > li:hover {
+    background-color: #eee;
+    color: #333;
+}
+
+.inputselect-list > li.selected {
+    background-color: #eee;
+    color: #333;
+}
+
+.inputselect-list > li.selected:hover {
+    cursor: default;
+}
